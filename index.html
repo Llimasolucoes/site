@@ -1,186 +1,81 @@
----
-layout: base
-nome: Início
-title: "Engenharia e Automação Industrial em Diadema e ABC | L.LIMA"
-description: "Engenharia e automação industrial em Diadema e ABC Paulista: projetos mecânicos e elétricos, robótica, NR-12, usinagem e bombas, com atendimento próximo."
----
-{%- assign empresa = site.data.empresa -%}
-{%- comment -%}
-PÁGINA INICIAL. Os textos estão direto neste arquivo, entre as tags HTML.
-Para editar, altere só o texto (não as tags < >). Veja COMO-EDITAR.md.
-{%- endcomment -%}
-
-<section class="hero hero--inicio">
-  <div class="container hero__grade">
-    <div class="hero__texto">
-      <h1><span class="sobretitulo">Engenharia e automação industrial em Diadema e ABC Paulista</span>Engenharia, automação e fabricação, com quem acompanha você de perto</h1>
-      <p class="hero__sub">Projetos mecânicos e elétricos, robótica industrial, gestão de projetos, adequação à NR-12 e fabricação de componentes, com atendimento próximo do primeiro contato à entrega.</p>
-      <div class="botoes">
-        <a class="botao botao--primario" href="{{ '/contato/' | relative_url }}">Solicitar orçamento</a>
-        <a class="botao botao--secundario" href="{{ '/servicos/' | relative_url }}">Conheça os serviços</a>
-      </div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>L.LIMA | Projetos e Soluções Industriais</title>
+<meta name="description" content="L.LIMA Projetos e Soluções Industriais: engenharia, automação robótica, adequação à NR-12, usinagem e caldeiraria. Site em construção.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root { --blue: #0A3A7A; --red: #C62828; --gray: #6E6E6E; --line: #E3E8EF; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: 'Lato', Arial, sans-serif;
+    background: #FFFFFF;
+    color: #17212B;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 48px 24px;
+  }
+  .logo { width: min(440px, 82vw); height: auto; }
+  .bar { display: flex; width: 120px; height: 4px; margin: 40px auto 32px; }
+  .bar span:first-child { flex: 1; background: var(--red); }
+  .bar span:last-child { flex: 2; background: var(--blue); }
+  h1 {
+    font-weight: 900;
+    font-size: clamp(26px, 5vw, 40px);
+    color: var(--blue);
+    letter-spacing: 0.5px;
+  }
+  p.lead {
+    margin-top: 14px;
+    max-width: 560px;
+    font-size: clamp(16px, 2.4vw, 18px);
+    line-height: 1.55;
+    color: var(--gray);
+  }
+  .contact {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    justify-content: center;
+    font-size: 16px;
+  }
+  .contact a { color: var(--blue); text-decoration: none; font-weight: 700; }
+  .contact a:hover { text-decoration: underline; }
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 18px 24px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--gray);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="logo.png" alt="L.LIMA Projetos e Soluções Industriais" width="900" height="288">
+    <div class="bar" aria-hidden="true"><span></span><span></span></div>
+    <h1>Site em construção</h1>
+    <p class="lead">Em breve, mais informações sobre nossos serviços de engenharia, automação robótica, adequação à NR-12, usinagem e caldeiraria.</p>
+    <div class="contact">
+      <a href="mailto:leonardo@llimasolucoes.com.br">leonardo@llimasolucoes.com.br</a>
+      <a href="tel:+5511951360265">(11) 95136-0265</a>
     </div>
-    <aside class="contato-direto" aria-label="Fale com o engenheiro responsável">
-      <div class="contato-direto__topo">
-        <img src="{{ '/assets/img/leonardo-correia-de-lima-engenheiro-mecanico-176.webp' | relative_url }}" alt="Leonardo Correia de Lima, engenheiro mecânico e fundador da L.LIMA" width="176" height="176" fetchpriority="high">
-        <div>
-          <p class="contato-direto__nome">{{ empresa.responsavel.nome }}</p>
-          <p class="contato-direto__cargo">{{ empresa.responsavel.cargo }} · {{ empresa.responsavel.crea }}</p>
-        </div>
-      </div>
-      <p class="contato-direto__frase">Fale direto com o engenheiro responsável pelo seu projeto, sem intermediários.</p>
-      <ul class="contato-direto__canais">
-        <li><a href="{{ empresa.whatsapp_link }}" target="_blank" rel="noopener">{% include icone.html nome="whatsapp" tamanho="20" %}WhatsApp {{ empresa.telefone }}<span class="sr"> (abre em nova aba)</span></a></li>
-        <li><a href="mailto:{{ empresa.email }}">{% include icone.html nome="email" tamanho="20" %}{{ empresa.email }}</a></li>
-      </ul>
-    </aside>
-  </div>
-</section>
-
-<section class="numeros" aria-label="A L.LIMA em números">
-  <div class="container">
-    <ul class="numeros__lista">
-      <li class="numeros__item"><span class="numeros__valor">8 anos</span><span class="numeros__rotulo">em automação e robótica industrial</span></li>
-      <li class="numeros__item"><span class="numeros__valor">Yaskawa · ABB · Fanuc · KUKA</span><span class="numeros__rotulo">experiência com robôs industriais</span></li>
-      <li class="numeros__item"><span class="numeros__valor">Usinagem em geral</span><span class="numeros__rotulo">peças e conjuntos sob desenho ou amostra</span></li>
-      <li class="numeros__item"><span class="numeros__valor">Até 1.000 kg</span><span class="numeros__rotulo">em conjuntos soldados</span></li>
-    </ul>
-  </div>
-</section>
-
-<section class="secao" aria-labelledby="pilares-titulo">
-  <div class="container">
-    <header class="secao__cabeca">
-      {% include barra.html %}
-      <h2 id="pilares-titulo">Soluções industriais do projeto à fabricação</h2>
-      <p>Engenharia, gestão e fabricação sob a mesma responsabilidade técnica, para indústrias de Diadema, do ABC Paulista e da Grande São Paulo.</p>
-    </header>
-    <ul class="grade grade--3">
-      <li class="card pilar reveal">
-        <span class="card__icone">{% include icone.html nome="robo" tamanho="28" %}</span>
-        <h3 class="card__titulo">Engenharia e automação</h3>
-        <p>Projetos mecânicos e elétricos, programação de robôs, simulação offline e adequação à NR-12.</p>
-        <ul class="card__lista">
-          <li><a href="{{ '/servicos/engenharia-e-projetos/' | relative_url }}">Engenharia e projetos</a></li>
-          <li><a href="{{ '/servicos/robotica-e-automacao/' | relative_url }}">Robótica e automação</a></li>
-          <li><a href="{{ '/servicos/adequacao-nr-12/' | relative_url }}">Adequação à NR-12</a></li>
-        </ul>
-      </li>
-      <li class="card pilar reveal">
-        <span class="card__icone">{% include icone.html nome="gestao" tamanho="28" %}</span>
-        <h3 class="card__titulo">Consultoria e gestão de projetos</h3>
-        <p>Planejamento, escopo, prazo, custo e fornecedores sob controle, do conceito ao aceite final.</p>
-        <ul class="card__lista">
-          <li><a href="{{ '/servicos/consultoria-e-gestao-de-projetos/' | relative_url }}">Consultoria e gestão de projetos</a></li>
-        </ul>
-      </li>
-      <li class="card pilar reveal">
-        <span class="card__icone">{% include icone.html nome="usinagem" tamanho="28" %}</span>
-        <h3 class="card__titulo">Fabricação e manutenção</h3>
-        <p>Usinagem, caldeiraria e bombas centrífugas e de engrenagens.</p>
-        <ul class="card__lista">
-          <li><a href="{{ '/servicos/usinagem-e-caldeiraria/' | relative_url }}">Usinagem e caldeiraria</a></li>
-          <li><a href="{{ '/servicos/bombas/' | relative_url }}">Bombas centrífugas e de engrenagens</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="secao secao--cinza" aria-labelledby="aplicacoes-titulo">
-  <div class="container">
-    <header class="secao__cabeca">
-      {% include barra.html %}
-      <h2 id="aplicacoes-titulo">Aplicações em robótica e automação industrial</h2>
-      <p>Células robotizadas e dispositivos para os processos mais comuns da indústria.</p>
-    </header>
-    <ul class="grade grade--aplic">
-      <li class="aplic reveal">{% include icone.html nome="solda" tamanho="22" %}<span>Solda MIG/MAG</span></li>
-      <li class="aplic reveal">{% include icone.html nome="ponto" tamanho="22" %}<span>Solda a ponto</span></li>
-      <li class="aplic reveal">{% include icone.html nome="laser" tamanho="22" %}<span>Solda laser</span></li>
-      <li class="aplic reveal">{% include icone.html nome="paletizacao" tamanho="22" %}<span>Manipulação e paletização</span></li>
-      <li class="aplic reveal">{% include icone.html nome="maquina" tamanho="22" %}<span>Alimentação de máquinas</span></li>
-      <li class="aplic reveal">{% include icone.html nome="gabarito" tamanho="22" %}<span>Dispositivos e gabaritos</span></li>
-    </ul>
-  </div>
-</section>
-
-<section class="secao" aria-labelledby="processo-titulo">
-  <div class="container">
-    <header class="secao__cabeca">
-      {% include barra.html %}
-      <h2 id="processo-titulo">Como trabalhamos: você presente em todas as etapas</h2>
-      <p>Cada etapa tem um ponto de contato claro com a sua equipe. Você sabe o que está sendo feito, por quem e quando.</p>
-    </header>
-    {% include etapas.html etapas=site.data.processo %}
-  </div>
-</section>
-
-<section class="secao secao--cinza" aria-labelledby="diferenciais-titulo">
-  <div class="container">
-    <header class="secao__cabeca">
-      {% include barra.html %}
-      <h2 id="diferenciais-titulo">Por que trabalhar com a L.LIMA</h2>
-    </header>
-    <ul class="diferenciais">
-      <li class="diferencial diferencial--principal reveal">
-        <span class="diferencial__icone">{% include icone.html nome="ouvir" %}</span>
-        <div><h3>Relacionamento próximo</h3><p>Um engenheiro responsável acompanha o seu projeto do primeiro contato à entrega, com comunicação clara e sem intermediários.</p></div>
-      </li>
-      <li class="diferencial reveal">
-        <span class="diferencial__icone">{% include icone.html nome="usuario" %}</span>
-        <div><h3>Interlocutor único</h3><p>Engenharia, gestão, fabricação e implantação sob a mesma responsabilidade técnica.</p></div>
-      </li>
-      <li class="diferencial reveal">
-        <span class="diferencial__icone">{% include icone.html nome="fabricacao" %}</span>
-        <div><h3>Experiência de chão de fábrica</h3><p>Projetos pensados por quem viveu a integração de células robóticas turn-key por dentro.</p></div>
-      </li>
-      <li class="diferencial reveal">
-        <span class="diferencial__icone">{% include icone.html nome="simulacao" %}</span>
-        <div><h3>Menos retrabalho em campo</h3><p>Simulação e projeto validados antes de fabricar e instalar.</p></div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="secao" aria-labelledby="pessoa-titulo">
-  <div class="container pessoa">
-    <div class="pessoa__foto reveal">
-      <picture>
-        <source type="image/webp" srcset="{{ '/assets/img/leonardo-correia-de-lima-engenheiro-480.webp' | relative_url }} 480w, {{ '/assets/img/leonardo-correia-de-lima-engenheiro.webp' | relative_url }} 800w" sizes="(min-width: 820px) 340px, 90vw">
-        <img src="{{ '/assets/img/leonardo-correia-de-lima-engenheiro.jpg' | relative_url }}" alt="Leonardo Correia de Lima, engenheiro mecânico e fundador da L.LIMA" width="800" height="1000" loading="lazy">
-      </picture>
-    </div>
-    <div class="pessoa__texto reveal">
-      {% include barra.html %}
-      <h2 id="pessoa-titulo">Quem está por trás</h2>
-      <blockquote>
-        <p>Fundada por Leonardo Correia de Lima, engenheiro mecânico (FEI, CREA-SP), com 8 anos em automação e robótica industrial, de projetista a gerente de projetos de células robóticas turn-key.</p>
-      </blockquote>
-      <p class="pessoa__assinatura">É ele quem atende você, acompanha o projeto e responde tecnicamente por cada entrega.</p>
-      <div class="botoes">
-        <a class="botao botao--secundario" href="{{ '/sobre/' | relative_url }}">Saiba mais sobre a L.LIMA</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="secao secao--cinza" aria-labelledby="regiao-titulo">
-  <div class="container">
-    <header class="secao__cabeca">
-      {% include barra.html %}
-      <h2 id="regiao-titulo">Atendimento em Diadema, ABC Paulista e Grande São Paulo</h2>
-      <p>Estamos em Diadema e atendemos de perto indústrias de São Bernardo do Campo, Santo André, São Caetano do Sul, Mauá, São Paulo e de toda a Grande São Paulo. Para outras regiões do Brasil, o atendimento é sob consulta.</p>
-    </header>
-    <ul class="chips" aria-label="Cidades atendidas">
-      {%- for cidade in empresa.cidades %}
-      <li>{% include icone.html nome="local" tamanho="16" %}{{ cidade }}</li>
-      {%- endfor %}
-      <li>{% include icone.html nome="local" tamanho="16" %}ABC Paulista</li>
-      <li>{% include icone.html nome="local" tamanho="16" %}Grande São Paulo</li>
-    </ul>
-    <p class="endereco-linha"><strong>{{ empresa.nome }}</strong> · {{ empresa.endereco.rua }}, {{ empresa.endereco.bairro }}, {{ empresa.endereco.cidade }} - {{ empresa.endereco.uf }}, {{ empresa.endereco.cep }} · <a href="tel:{{ empresa.telefone_link }}">{{ empresa.telefone }}</a></p>
-  </div>
-</section>
-
-{% include chamada-final.html %}
+  </main>
+  <footer>L. LIMA Projetos e Soluções Industriais · Diadema - SP</footer>
+</body>
+</html>
