@@ -1,0 +1,21 @@
+---
+layout: base
+nome: Página não encontrada
+permalink: /404.html
+title: "Página não encontrada | L.LIMA Projetos e Soluções Industriais"
+description: "A página procurada não existe ou mudou de endereço."
+robots: "noindex, follow"
+sitemap: false
+---
+<section class="aviso hero">
+  <div class="container">
+    <span class="aviso__selo">Erro 404</span>
+    <h1>Página não encontrada</h1>
+    <p>O endereço pode ter mudado ou a página não existe mais. Você pode voltar ao início, ver os nossos serviços ou falar direto com a gente.</p>
+    <div class="botoes botoes--centro">
+      <a class="botao botao--primario" href="{{ '/' | relative_url }}">Voltar ao início</a>
+      <a class="botao botao--secundario" href="{{ '/servicos/' | relative_url }}">Ver serviços</a>
+      <a class="botao botao--texto" href="{{ '/contato/' | relative_url }}">Contato {% include icone.html nome="seta" tamanho="18" %}</a>
+    </div>
+  </div>
+</section>
