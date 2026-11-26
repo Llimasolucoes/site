@@ -1,0 +1,7 @@
+{%- comment -%} Card de serviço. Parâmetro: s (página do serviço) {%- endcomment -%}
+<li class="card card--link reveal">
+  <span class="card__icone">{% include icone.html nome=include.s.icone tamanho="28" %}</span>
+  <h3 class="card__titulo"><a href="{{ include.s.url | relative_url }}">{{ include.s.nome }}</a></h3>
+  <p>{{ include.s.resumo }}</p>
+  <span class="card__mais" aria-hidden="true">Saiba mais {% include icone.html nome="seta" tamanho="16" %}</span>
+</li>

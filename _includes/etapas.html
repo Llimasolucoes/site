@@ -1,0 +1,15 @@
+{%- comment -%}
+Bloco de etapas numeradas. Parâmetros: etapas (lista com titulo, texto e cliente), compacto (opcional)
+{%- endcomment -%}
+<ol class="etapas{% if include.compacto %} etapas--compacto{% endif %}">
+  {%- for e in include.etapas %}
+  <li class="etapa reveal">
+    <span class="etapa__num" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+    <h3 class="etapa__titulo">{{ e.titulo }}</h3>
+    {%- if e.texto %}<p>{{ e.texto }}</p>{% endif %}
+    {%- if e.cliente %}
+    <p class="etapa__cliente">{% include icone.html nome="usuario" tamanho="16" %}<span><strong>Com você:</strong> {{ e.cliente }}</span></p>
+    {%- endif %}
+  </li>
+  {%- endfor %}
+</ol>
