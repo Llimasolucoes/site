@@ -16,7 +16,7 @@ description: "Projeto mecânico industrial e projeto elétrico em EPLAN: disposi
 
 h1: "Projeto mecânico industrial e projeto elétrico"
 subtitulo: "Projetos mecânicos e elétricos completos, prontos para fabricar e montar."
-intro: "Engenharia mecânica em Diadema para indústrias do ABC Paulista e da Grande São Paulo: do conceito ao detalhamento pronto para fabricar, com um engenheiro responsável acompanhando cada revisão."
+intro: "Engenharia mecânica em Diadema para indústrias de todo o Brasil: do conceito ao detalhamento pronto para fabricar, com um engenheiro responsável acompanhando cada revisão."
 hero_pontos:
   - "Projetos prontos para fabricar e montar"
   - "Catia V5, NX, SolidWorks, AutoCAD e EPLAN"

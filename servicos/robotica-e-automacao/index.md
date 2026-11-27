@@ -19,7 +19,7 @@ description: "Programação de robôs industriais Yaskawa, ABB, Fanuc e KUKA, si
 
 h1: "Programação de robôs industriais e automação"
 subtitulo: "Programação, simulação e integração de robôs industriais."
-intro: "Integração de robôs no ABC Paulista e na Grande São Paulo: da simulação offline ao start-up da célula robotizada de solda, manipulação ou paletização, com acompanhamento até a produção estabilizar."
+intro: "Integração de robôs para indústrias de todo o Brasil, a partir do ABC Paulista: da simulação offline ao start-up da célula robotizada de solda, manipulação ou paletização, com acompanhamento até a produção estabilizar."
 hero_pontos:
   - "Robôs Yaskawa, ABB, Fanuc e KUKA"
   - "Simulação offline em MotoSim e Process Simulate"

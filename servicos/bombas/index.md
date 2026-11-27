@@ -11,8 +11,9 @@ cor: "#2563EB"
 cor_icone: "#FFFFFF"
 hero_img: bombas-industriais-tubulacao
 galeria:
+  - conjuntos-motor-bomba
+  - bomba-centrifuga-inox
   - motor-bomba-industrial
-  - usinagem-maquina-operatriz
 palavra_chave: "Manutenção de bombas centrífugas"
 
 title: "Manutenção de Bombas Centrífugas e de Engrenagens | L.LIMA"
@@ -20,7 +21,7 @@ description: "Manutenção de bombas centrífugas e reparo de bombas de engrenag
 
 h1: "Manutenção de bombas centrífugas e de engrenagens"
 subtitulo: "Manutenção e fabricação de componentes para bombas industriais."
-intro: "Reparo de bombas industriais e fabricação de peças para bombas em Diadema, para indústrias do ABC Paulista e da Grande São Paulo, com diagnóstico, relatório técnico e acompanhamento do engenheiro responsável."
+intro: "Reparo de bombas industriais e fabricação de peças para bombas em Diadema, para indústrias do ABC Paulista e de todo o Brasil, com diagnóstico, relatório técnico e acompanhamento do engenheiro responsável."
 hero_pontos:
   - "Desmontagem, diagnóstico e relatório técnico"
   - "Recuperação de eixos, buchas e alojamentos"

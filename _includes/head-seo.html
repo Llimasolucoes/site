@@ -52,7 +52,8 @@
         { "@type": "City", "name": {{ cidade | jsonify }} },
         {%- endfor %}
         { "@type": "AdministrativeArea", "name": "ABC Paulista" },
-        { "@type": "AdministrativeArea", "name": "Grande São Paulo" }
+        { "@type": "AdministrativeArea", "name": "Grande São Paulo" },
+        { "@type": "Country", "name": "Brasil" }
       ],
       "founder": {
         "@type": "Person",
@@ -99,7 +100,8 @@
       "areaServed": [
         { "@type": "City", "name": "Diadema" },
         { "@type": "AdministrativeArea", "name": "ABC Paulista" },
-        { "@type": "AdministrativeArea", "name": "Grande São Paulo" }
+        { "@type": "AdministrativeArea", "name": "Grande São Paulo" },
+        { "@type": "Country", "name": "Brasil" }
       ]
     }
     {%- endif %}

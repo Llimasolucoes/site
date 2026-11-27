@@ -21,7 +21,7 @@ description: "Usinagem sob encomenda em Diadema: tornearia, fresamento, retífic
 
 h1: "Usinagem sob encomenda e caldeiraria"
 subtitulo: "Peças e conjuntos sob desenho ou amostra, com controle dimensional."
-intro: "Usinagem de peças em Diadema para indústrias do ABC Paulista e da Grande São Paulo, em estrutura de fabricação sob nossa responsabilidade: tornearia, fresamento, retífica cilíndrica, caldeiraria e solda, com acompanhamento do engenheiro responsável."
+intro: "Usinagem de peças em Diadema para indústrias do ABC Paulista e de todo o Brasil, em estrutura de fabricação sob nossa responsabilidade: tornearia, fresamento, retífica cilíndrica, caldeiraria e solda, com acompanhamento do engenheiro responsável."
 hero_pontos:
   - "Peças sob desenho ou amostra"
   - "Conjuntos soldados até 1.000 kg"

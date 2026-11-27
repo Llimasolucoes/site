@@ -16,7 +16,7 @@ description: "Gestão de projetos industriais e gerenciamento de projetos de aut
 
 h1: "Gestão de projetos industriais e consultoria em engenharia"
 subtitulo: "Seu projeto industrial no prazo, no custo e no escopo, com quem já gerenciou projetos turn-key."
-intro: "Gerenciamento de projetos de automação e implantação de linhas de produção para indústrias de Diadema, do ABC Paulista e da Grande São Paulo, com relatórios claros e reuniões periódicas com a sua equipe."
+intro: "Gerenciamento de projetos de automação e implantação de linhas de produção para indústrias de todo o Brasil, com relatórios claros e reuniões periódicas com a sua equipe."
 hero_pontos:
   - "Do conceito ao aceite final"
   - "Escopo, prazo e custo sob controle"
@@ -76,7 +76,7 @@ etapas:
 destaque:
   icone: gestao
   titulo: "Experiência de quem já gerenciou projetos turn-key"
-  texto: "Experiência em gerência de projetos de automação e robótica industrial e MBA em Gestão de Projetos (em andamento). Na prática, isso significa conhecer por dentro cada etapa de um projeto turn-key, da engenharia ao comissionamento."
+  texto: "Experiência em gerência de projetos de automação e robótica industrial e MBA em Gestão de Projetos. Na prática, isso significa conhecer por dentro cada etapa de um projeto turn-key, da engenharia ao comissionamento."
 
 faq:
   - pergunta: "Vocês gerenciam projetos com outros fornecedores envolvidos?"

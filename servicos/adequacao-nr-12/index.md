@@ -12,11 +12,11 @@ hero_img: painel-eletrico-seguranca-maquinas
 palavra_chave: "Adequação NR-12"
 
 title: "Adequação NR-12 em Diadema e ABC | L.LIMA Projetos e Soluções Industriais"
-description: "Adequação NR-12 de máquinas e linhas: apreciação de riscos, projeto, proteções, laudo NR-12 e ART. Atendimento em Diadema, ABC Paulista e São Paulo."
+description: "Adequação NR-12 de máquinas e linhas: apreciação de riscos, projeto, proteções, laudo NR-12 e ART. Atendimento em todo o Brasil."
 
 h1: "Adequação à NR-12 de máquinas e linhas de produção"
 subtitulo: "Segurança de máquinas e linhas de produção, do diagnóstico à máquina adequada."
-intro: "Apreciação de riscos, projeto, fabricação das proteções de máquinas, integração elétrica, laudo NR-12 e ART para indústrias de Diadema, do ABC Paulista e de São Paulo."
+intro: "Apreciação de riscos, projeto, fabricação das proteções de máquinas, integração elétrica, laudo NR-12 e ART para indústrias de Diadema, do ABC Paulista e de todo o Brasil."
 hero_pontos:
   - "Apreciação de riscos conforme a ABNT NBR ISO 12100"
   - "Sistemas de segurança com categoria definida (ISO 13849)"

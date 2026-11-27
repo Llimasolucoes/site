@@ -2,7 +2,7 @@
 layout: base
 nome: Início
 title: "Engenharia e Automação Industrial em Diadema e ABC | L.LIMA"
-description: "Engenharia e automação industrial em Diadema e ABC Paulista: projetos mecânicos e elétricos, robótica, NR-12, usinagem e bombas, com atendimento próximo."
+description: "Engenharia e automação industrial em Diadema (ABC Paulista) com atendimento em todo o Brasil: projetos, robótica, NR-12, usinagem e bombas."
 ---
 {%- assign empresa = site.data.empresa -%}
 {%- comment -%}
@@ -14,7 +14,7 @@ Para editar, altere só o texto (não as tags < >). Veja COMO-EDITAR.md.
   {% include hero-fundo.html nome="celula-robotizada-solda-automotiva" %}
   <div class="container hero__grade">
     <div class="hero__texto">
-      <h1><span class="sobretitulo">Engenharia e automação industrial em Diadema e ABC Paulista</span>Engenharia, automação e fabricação, com quem acompanha você de perto</h1>
+      <h1><span class="sobretitulo">Engenharia e automação industrial · Diadema - SP · Atendimento em todo o Brasil</span>Engenharia, automação e fabricação, com quem acompanha você de perto</h1>
       <p class="hero__sub">Projetos mecânicos e elétricos, robótica industrial, gestão de projetos, adequação à NR-12 e fabricação de componentes, com atendimento próximo do primeiro contato à entrega.</p>
       <div class="botoes">
         <a class="botao botao--primario" href="{{ '/contato/' | relative_url }}">Solicitar orçamento</a>
@@ -54,7 +54,7 @@ Para editar, altere só o texto (não as tags < >). Veja COMO-EDITAR.md.
     <header class="secao__cabeca">
       {% include barra.html %}
       <h2 id="pilares-titulo">Soluções industriais do projeto à fabricação</h2>
-      <p>Engenharia, gestão e fabricação sob a mesma responsabilidade técnica, para indústrias de Diadema, do ABC Paulista e da Grande São Paulo.</p>
+      <p>Engenharia, gestão e fabricação sob a mesma responsabilidade técnica, para indústrias de todo o Brasil, a partir de Diadema, no ABC Paulista.</p>
     </header>
     <ul class="grade grade--3">
       <li class="card card--foto pilar reveal" style="--cor: #E5590C;">
@@ -179,10 +179,11 @@ Para editar, altere só o texto (não as tags < >). Veja COMO-EDITAR.md.
   <div class="container">
     <header class="secao__cabeca">
       {% include barra.html %}
-      <h2 id="regiao-titulo">Atendimento em Diadema, ABC Paulista e Grande São Paulo</h2>
-      <p>Estamos em Diadema e atendemos de perto indústrias de São Bernardo do Campo, Santo André, São Caetano do Sul, Mauá, São Paulo e de toda a Grande São Paulo. Para outras regiões do Brasil, o atendimento é sob consulta.</p>
+      <h2 id="regiao-titulo">Atendimento em todo o Brasil</h2>
+      <p>Nossa base fica em Diadema, no ABC Paulista, e atendemos indústrias em todo o Brasil. Da Grande São Paulo, como São Bernardo do Campo, Santo André, São Caetano do Sul e Mauá, a qualquer outro estado, o acompanhamento é o mesmo: de perto, com visitas técnicas e contato direto com o engenheiro responsável.</p>
     </header>
-    <ul class="chips" aria-label="Cidades atendidas">
+    <ul class="chips" aria-label="Regiões atendidas">
+      <li class="chip--destaque">{% include icone.html nome="local" tamanho="16" %}Todo o Brasil</li>
       {%- for cidade in empresa.cidades %}
       <li>{% include icone.html nome="local" tamanho="16" %}{{ cidade }}</li>
       {%- endfor %}
