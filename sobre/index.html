@@ -5,7 +5,8 @@ title: "Sobre a L.LIMA | Engenheiro Mecânico em Automação Industrial"
 description: "Conheça a L.LIMA, empresa de engenharia em Diadema fundada por Leonardo Correia de Lima, engenheiro mecânico (CREA-SP) com 8 anos em automação industrial."
 ---
 {%- assign empresa = site.data.empresa -%}
-<section class="hero hero--interno">
+<section class="hero hero--foto hero--interno">
+  {% include hero-fundo.html nome="solda-mig-caldeiraria" %}
   <div class="container">
     <div class="hero__texto hero__texto--largo">
       {% include migalhas.html %}
@@ -34,10 +35,7 @@ description: "Conheça a L.LIMA, empresa de engenharia em Diadema fundada por Le
       </ol>
     </div>
     <aside class="ficha" aria-label="Responsável técnico">
-      <picture>
-        <source type="image/webp" srcset="{{ '/assets/img/leonardo-correia-de-lima-engenheiro-480.webp' | relative_url }} 480w, {{ '/assets/img/leonardo-correia-de-lima-engenheiro.webp' | relative_url }} 800w" sizes="(min-width: 900px) 310px, 90vw">
-        <img src="{{ '/assets/img/leonardo-correia-de-lima-engenheiro.jpg' | relative_url }}" alt="Leonardo Correia de Lima, engenheiro mecânico e fundador da L.LIMA" width="800" height="1000" loading="lazy">
-      </picture>
+      <span class="ficha__icone" aria-hidden="true">{% include icone.html nome="engenharia" tamanho="30" %}</span>
       <dl>
         <dt>Fundador e responsável técnico</dt>
         <dd>{{ empresa.responsavel.nome }}</dd>
