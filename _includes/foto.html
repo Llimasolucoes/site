@@ -1,0 +1,5 @@
+{%- comment -%}
+Foto responsiva. Parâmetros: nome (chave em _data/fotos.yml), classe, sizes, prioridade (true = primeira imagem da página)
+{%- endcomment -%}
+{%- assign f = site.data.fotos[include.nome] -%}
+<img{% if include.classe %} class="{{ include.classe }}"{% endif %} src="{{ '/assets/img/fotos/' | append: include.nome | append: '-1600.webp' | relative_url }}" srcset="{{ '/assets/img/fotos/' | append: include.nome | append: '-800.webp' | relative_url }} 800w, {{ '/assets/img/fotos/' | append: include.nome | append: '-1600.webp' | relative_url }} 1600w" sizes="{{ include.sizes | default: '100vw' }}" width="1600" height="1067" alt="{{ f.alt }}"{% if include.prioridade %} fetchpriority="high"{% else %} loading="lazy"{% endif %} decoding="async">
