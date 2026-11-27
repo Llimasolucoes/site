@@ -1,0 +1,22 @@
+# Configuração do site L.LIMA (Jekyll, compilado automaticamente pelo GitHub Pages)
+# Depois de alterar este arquivo, o GitHub Pages republica o site em 1 a 2 minutos.
+
+title: "L.LIMA Projetos e Soluções Industriais"
+url: "https://llimasolucoes.com.br"
+baseurl: ""
+lang: pt-BR
+timezone: America/Sao_Paulo
+
+# Contato: o orçamento é feito pelo WhatsApp (links em _data/empresa.yml).
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - COMO-EDITAR.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - tools

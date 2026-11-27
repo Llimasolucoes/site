@@ -1,0 +1,9 @@
+<nav class="migalhas" aria-label="Você está em">
+  <ol>
+    <li><a href="{{ '/' | relative_url }}">Início</a></li>
+    {%- if page.layout == "servico" %}
+    <li><a href="{{ '/servicos/' | relative_url }}">Serviços</a></li>
+    {%- endif %}
+    <li><span aria-current="page">{{ page.nome }}</span></li>
+  </ol>
+</nav>

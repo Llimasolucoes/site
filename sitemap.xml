@@ -1,0 +1,18 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- assign paginas = site.pages | sort: "url" %}
+{%- for p in paginas %}
+{%- if p.sitemap == false %}{% continue %}{% endif %}
+{%- assign fim = p.url | slice: -1 %}
+{%- if fim != '/' %}{% continue %}{% endif %}
+  <url>
+    <loc>{{ p.url | absolute_url }}</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+    <priority>{% if p.url == '/' %}1.0{% elsif p.layout == 'servico' %}0.9{% else %}0.7{% endif %}</priority>
+  </url>
+{%- endfor %}
+</urlset>

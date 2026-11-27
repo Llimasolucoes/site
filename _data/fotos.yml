@@ -1,0 +1,31 @@
+# Fotos do site (pasta assets/img/fotos/). Cada foto existe em duas larguras: -1600.webp e -800.webp.
+# "alt" é o texto alternativo (acessibilidade e Google).
+# Fotos ilustrativas do banco gratuito Unsplash (licença Unsplash: uso comercial livre, sem atribuição obrigatória).
+# Origem de cada uma em assets/img/fotos/CREDITOS.txt. Substitua por fotos reais da L.LIMA quando houver.
+
+celula-robotizada-solda-automotiva:
+  alt: "Célula robotizada de solda com robôs industriais em linha de carroceria automotiva"
+robos-industriais-linha-producao:
+  alt: "Robôs industriais em linha de produção automatizada"
+projeto-mecanico-cad:
+  alt: "Projeto mecânico industrial sendo desenvolvido em software CAD"
+projeto-desenho-tecnico:
+  alt: "Engenheiro revisando desenhos técnicos de um projeto industrial"
+painel-eletrico-seguranca-maquinas:
+  alt: "Painel elétrico com dispositivos de comando e segurança de máquinas"
+usinagem-maquina-operatriz:
+  alt: "Operador ajustando máquina operatriz em oficina de usinagem"
+solda-mig-caldeiraria:
+  alt: "Soldagem MIG em serviço de caldeiraria"
+esmerilhamento-faiscas-caldeiraria:
+  alt: "Acabamento de peça metálica com esmerilhadeira em caldeiraria"
+bombas-industriais-tubulacao:
+  alt: "Bombas industriais e tubulação de aço inox em instalação de processo"
+motor-bomba-industrial:
+  alt: "Motor e bomba centrífuga em instalação industrial"
+linha-producao-industrial:
+  alt: "Linha de produção industrial com máquinas automatizadas"
+conjuntos-motor-bomba:
+  alt: "Conjuntos motor-bomba industriais montados sobre base metálica"
+bomba-centrifuga-inox:
+  alt: "Bomba centrífuga de aço inox com transmissor em instalação industrial"

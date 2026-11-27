@@ -1,0 +1,9 @@
+{%- comment -%} Perguntas frequentes. Parâmetro: itens (lista com pergunta e resposta) {%- endcomment -%}
+<div class="faq">
+  {%- for item in include.itens %}
+  <details class="faq__item">
+    <summary><span class="faq__pergunta">{{ item.pergunta }}</span>{% include icone.html nome="chevron" tamanho="20" classe="faq__icone" %}</summary>
+    <div class="faq__resposta">{{ item.resposta | markdownify }}</div>
+  </details>
+  {%- endfor %}
+</div>

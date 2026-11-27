@@ -1,0 +1,13 @@
+---
+layout: base
+---
+<section class="hero hero--interno">
+  <div class="container">
+    <div class="hero__texto hero__texto--largo">
+      {% include migalhas.html %}
+      <h1>{{ page.h1 }}</h1>
+      {%- if page.subtitulo %}<p class="hero__sub">{{ page.subtitulo }}</p>{% endif %}
+    </div>
+  </div>
+</section>
+{{ content }}

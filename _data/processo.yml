@@ -1,0 +1,17 @@
+# "Como trabalhamos": 5 etapas usadas na Início e na página de Serviços.
+# "cliente" descreve onde o cliente participa da etapa.
+- titulo: "Escuta e diagnóstico"
+  texto: "Entendemos o processo, a necessidade e as restrições antes de propor qualquer solução. Sempre que possível, com visita técnica no local."
+  cliente: "Você apresenta o problema, o objetivo e o contexto da sua produção."
+- titulo: "Projeto"
+  texto: "Desenvolvemos o projeto mecânico e elétrico com escopo, prazo e custo claros, documentados desde o início."
+  cliente: "Você revisa e aprova o escopo e as soluções propostas."
+- titulo: "Simulação e validação com o cliente"
+  texto: "Simulamos alcance, ciclo e layout e validamos o projeto antes de fabricar, para reduzir retrabalho em campo."
+  cliente: "Você valida o projeto e a simulação conosco antes da fabricação."
+- titulo: "Fabricação"
+  texto: "Componentes, dispositivos e conjuntos são fabricados em estrutura de fabricação sob nossa responsabilidade, com controle dimensional."
+  cliente: "Você recebe o andamento da fabricação com atualizações periódicas."
+- titulo: "Implantação e acompanhamento"
+  texto: "Instalamos, colocamos em operação e acompanhamos a produção depois da entrega, com documentação e treinamento."
+  cliente: "Você acompanha o start-up e conta com suporte depois da entrega."

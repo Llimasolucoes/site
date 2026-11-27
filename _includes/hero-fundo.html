@@ -1,0 +1,5 @@
+{%- comment -%} Foto de fundo do topo da página. Parâmetro: nome (chave em _data/fotos.yml) {%- endcomment -%}
+{%- if include.nome %}
+<div class="hero__fundo">{% include foto.html nome=include.nome prioridade=true sizes="100vw" %}</div>
+{%- endif %}
+<div class="hero__grade-tec" aria-hidden="true"></div>

@@ -1,0 +1,38 @@
+# Dados da empresa. Usados em todo o site (rodapé, contato, dados estruturados do Google).
+# Mantenha IGUAIS ao Perfil da Empresa no Google, ao cartão e às redes (NAP idêntico).
+
+nome: "L.LIMA Projetos e Soluções Industriais"
+nome_curto: "L.LIMA"
+frase_relacionamento: "Parceria técnica de perto, do projeto à entrega."
+
+endereco:
+  rua: "Av. Nossa Sra. das Graças, 813"
+  bairro: "Serraria"
+  cidade: "Diadema"
+  uf: "SP"
+  cep: "09981-005"
+
+telefone: "(11) 95136-0265"
+telefone_link: "+5511951360265"
+whatsapp_link: "https://wa.me/5511951360265"
+# Link do botão de orçamento (abre o WhatsApp com uma mensagem inicial pronta)
+whatsapp_orcamento_link: "https://wa.me/5511951360265?text=Ol%C3%A1%2C%20Leonardo%21%20Vim%20pelo%20site%20da%20L.LIMA%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+email: "leonardo@llimasolucoes.com.br"
+cnpj: "64.790.044/0001-45"
+
+responsavel:
+  nome: "Leonardo Correia de Lima"
+  cargo: "Engenheiro mecânico"
+  crea: "CREA-SP 5071018151"
+
+regiao_texto: "Atendimento em todo o Brasil, com base em Diadema - SP, no ABC Paulista."
+cidades:
+  - Diadema
+  - São Bernardo do Campo
+  - Santo André
+  - São Caetano do Sul
+  - Mauá
+  - São Paulo
+
+# LinkedIn: preencher quando a página da empresa existir (deixe vazio para não aparecer)
+linkedin: ""

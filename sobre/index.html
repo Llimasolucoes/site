@@ -1,0 +1,109 @@
+---
+layout: base
+nome: Sobre
+title: "Sobre a L.LIMA | Engenheiro Mecânico em Automação Industrial"
+description: "Conheça a L.LIMA, empresa de engenharia em Diadema fundada por Leonardo Correia de Lima, engenheiro mecânico (CREA-SP) com 8 anos em automação industrial."
+---
+{%- assign empresa = site.data.empresa -%}
+<section class="hero hero--foto hero--interno">
+  {% include hero-fundo.html nome="solda-mig-caldeiraria" %}
+  <div class="container">
+    <div class="hero__texto hero__texto--largo">
+      {% include migalhas.html %}
+      <h1><span class="sobretitulo">Empresa de engenharia em Diadema · Atendimento em todo o Brasil</span>Relacionamento próximo e experiência técnica em cada projeto</h1>
+      <p class="hero__sub">A L.LIMA une engenharia, automação e fabricação com um jeito de trabalhar simples: estar perto do cliente em todas as etapas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="secao" aria-labelledby="historia-titulo">
+  <div class="container sobre-grade">
+    <div class="texto-longo">
+      {% include barra.html %}
+      <h2 id="historia-titulo">Nossa história</h2>
+      <p>A L.LIMA Projetos e Soluções Industriais foi fundada por Leonardo Correia de Lima, engenheiro mecânico formado pela FEI e registrado no CREA-SP, depois de 8 anos de atuação em automação e robótica industrial.</p>
+      <p>Nesse tempo, ele passou por todas as etapas de um projeto: começou no desenho técnico, projetou células e dispositivos, coordenou equipes e chegou à gerência de projetos de células robóticas turn-key. Viu de perto o que faz um projeto industrial dar certo e o que costuma dar errado, e quase sempre a diferença estava na comunicação com o cliente.</p>
+      <p>Por isso a L.LIMA nasceu com uma proposta clara: oferecer engenharia, gestão e fabricação com um engenheiro responsável que conhece o seu projeto do início ao fim, fala a sua língua e está disponível quando você precisa.</p>
+
+      <h3>Trajetória do fundador em automação e robótica industrial</h3>
+      <ol class="trajetoria">
+        <li><strong>Desenhista</strong><span>Detalhamento mecânico e base técnica de projeto.</span></li>
+        <li><strong>Projetista mecânico</strong><span>Projeto de células robotizadas, dispositivos e máquinas.</span></li>
+        <li><strong>Coordenador de projetos</strong><span>Coordenação de equipes de engenharia e de prazos de entrega.</span></li>
+        <li><strong>Gerente de projetos</strong><span>Gestão de projetos de células robóticas turn-key, do conceito ao aceite.</span></li>
+        <li><strong>Fundador da L.LIMA</strong><span>Engenharia, automação e fabricação com atendimento próximo.</span></li>
+      </ol>
+    </div>
+    <aside class="ficha" aria-label="Responsável técnico">
+      <span class="ficha__icone" aria-hidden="true">{% include icone.html nome="engenharia" tamanho="30" %}</span>
+      <dl>
+        <dt>Fundador e responsável técnico</dt>
+        <dd>{{ empresa.responsavel.nome }}</dd>
+        <dt>Formação</dt>
+        <dd>Engenharia mecânica (FEI)</dd>
+        <dt>Registro profissional</dt>
+        <dd>{{ empresa.responsavel.crea }}, com emissão de ART</dd>
+        <dt>Especialização</dt>
+        <dd>MBA em Gestão de Projetos</dd>
+        <dt>Sede</dt>
+        <dd>{{ empresa.endereco.cidade }} - {{ empresa.endereco.uf }}</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="secao secao--cinza" aria-labelledby="compromissos-titulo">
+  <div class="container">
+    <header class="secao__cabeca">
+      {% include barra.html %}
+      <h2 id="compromissos-titulo">Como trabalhamos com o cliente</h2>
+      <p>Três compromissos que valem para qualquer projeto, do menor reparo ao projeto turn-key.</p>
+    </header>
+    <ul class="grade grade--3">
+      <li class="card reveal">
+        <span class="card__icone">{% include icone.html nome="ouvir" tamanho="28" %}</span>
+        <h3 class="card__titulo">Escuta antes de propor</h3>
+        <p>Primeiro entendemos o seu processo, as suas restrições e o seu objetivo. Só depois apresentamos uma solução.</p>
+      </li>
+      <li class="card reveal">
+        <span class="card__icone">{% include icone.html nome="documento" tamanho="28" %}</span>
+        <h3 class="card__titulo">Comunicação clara em todas as etapas</h3>
+        <p>Você sabe o que está sendo feito, por quem e quando, com relatórios objetivos e contato direto com o engenheiro.</p>
+      </li>
+      <li class="card reveal">
+        <span class="card__icone">{% include icone.html nome="montagem" tamanho="28" %}</span>
+        <h3 class="card__titulo">Acompanhamento até depois da entrega</h3>
+        <p>O projeto não termina na entrega: acompanhamos o start-up e seguimos disponíveis para o que você precisar.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="secao" aria-labelledby="valores-titulo">
+  <div class="container">
+    <header class="secao__cabeca">
+      {% include barra.html %}
+      <h2 id="valores-titulo">Nossos valores</h2>
+    </header>
+    <ul class="diferenciais">
+      <li class="diferencial diferencial--principal reveal">
+        <span class="diferencial__icone">{% include icone.html nome="usuario" %}</span>
+        <div><h3>Relacionamento</h3><p>Parceria técnica de perto, construída com confiança e presença em cada etapa.</p></div>
+      </li>
+      <li class="diferencial reveal">
+        <span class="diferencial__icone">{% include icone.html nome="regua" %}</span>
+        <div><h3>Precisão técnica</h3><p>Decisões de engenharia fundamentadas, projetos validados e responsabilidade técnica registrada.</p></div>
+      </li>
+      <li class="diferencial reveal">
+        <span class="diferencial__icone">{% include icone.html nome="ouvir" %}</span>
+        <div><h3>Transparência</h3><p>Escopo, prazos, custos e riscos apresentados com clareza, sem surpresas.</p></div>
+      </li>
+      <li class="diferencial reveal">
+        <span class="diferencial__icone">{% include icone.html nome="relogio" %}</span>
+        <div><h3>Compromisso com prazo</h3><p>Planejamento realista e acompanhamento constante para entregar o que foi combinado.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% include chamada-final.html titulo="Vamos conversar sobre o seu projeto?" texto="Cada projeto começa com uma boa conversa. Conte o que você precisa: um engenheiro vai responder pessoalmente." %}

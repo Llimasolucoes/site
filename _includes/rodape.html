@@ -1,0 +1,41 @@
+{%- assign empresa = site.data.empresa -%}
+{%- assign servicos = site.pages | where: "layout", "servico" | sort: "ordem" -%}
+<footer class="rodape">
+  <div class="barra-marca barra-marca--larga" aria-hidden="true"><span></span><span></span></div>
+  <div class="container rodape__grade">
+    <div class="rodape__marca">
+      <img src="{{ '/assets/img/llima-logo-branco.webp' | relative_url }}" alt="L.LIMA Projetos e Soluções Industriais" width="450" height="144" loading="lazy">
+      <p class="rodape__frase">{{ empresa.frase_relacionamento }}</p>
+      <p>Engenharia, automação e fabricação para a indústria. {{ empresa.regiao_texto }}</p>
+    </div>
+    <nav class="rodape__col" aria-label="Serviços">
+      <h2 class="rodape__titulo">Serviços</h2>
+      <ul>
+        {%- for s in servicos %}
+        <li><a href="{{ s.url | relative_url }}">{{ s.nome }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    <nav class="rodape__col" aria-label="Institucional">
+      <h2 class="rodape__titulo">Empresa</h2>
+      <ul>
+        <li><a href="{{ '/sobre/' | relative_url }}">Sobre</a></li>
+        <li><a href="{{ '/projetos/' | relative_url }}">Projetos</a></li>
+        <li><a href="{{ '/conteudos/' | relative_url }}">Conteúdos</a></li>
+        <li><a href="{{ '/contato/' | relative_url }}">Contato e orçamento</a></li>
+      </ul>
+    </nav>
+    <div class="rodape__col">
+      <h2 class="rodape__titulo">Contato</h2>
+      <ul class="rodape__contato">
+        <li>{% include icone.html nome="email" tamanho="18" %}<a href="mailto:{{ empresa.email }}">{{ empresa.email }}</a></li>
+        <li>{% include icone.html nome="whatsapp" tamanho="18" %}<a href="{{ empresa.whatsapp_link }}" rel="noopener" target="_blank">WhatsApp {{ empresa.telefone }}<span class="sr"> (abre em nova aba)</span></a></li>
+        <li>{% include icone.html nome="local" tamanho="18" %}<address>{{ empresa.endereco.rua }}, {{ empresa.endereco.bairro }}<br>{{ empresa.endereco.cidade }} - {{ empresa.endereco.uf }}, CEP {{ empresa.endereco.cep }}</address></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container rodape__base">
+    <p>© {{ site.time | date: "%Y" }} {{ empresa.nome }} · CNPJ {{ empresa.cnpj }}</p>
+    <p>Responsável técnico: {{ empresa.responsavel.nome }}, {{ empresa.responsavel.cargo | downcase }}, {{ empresa.responsavel.crea }}</p>
+  </div>
+</footer>
