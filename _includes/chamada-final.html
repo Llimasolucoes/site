@@ -8,8 +8,8 @@ Chamada final. Parâmetros opcionais: titulo, texto, relacionados (lista de URLs
     <h2 id="chamada-titulo">{{ include.titulo | default: "Vamos construir essa solução juntos?" }}</h2>
     <p class="chamada__texto">{{ include.texto | default: "Conte o que você precisa. Respondemos em até 1 dia útil e acompanhamos você em cada etapa." }}</p>
     <div class="botoes botoes--centro">
-      <a class="botao botao--primario" href="{{ '/contato/' | relative_url }}">Solicitar orçamento</a>
-      <a class="botao botao--secundario" href="{{ empresa.whatsapp_link }}" target="_blank" rel="noopener">{% include icone.html nome="whatsapp" tamanho="20" %}WhatsApp<span class="sr"> (abre em nova aba)</span></a>
+      <a class="botao botao--primario" href="{{ '/contato/' | relative_url }}" data-umami-event="Solicitar orçamento - chamada final" data-umami-event-pagina="{{ page.url }}">Solicitar orçamento</a>
+      <a class="botao botao--secundario" href="{{ empresa.whatsapp_link }}" target="_blank" rel="noopener" data-umami-event="WhatsApp - chamada final" data-umami-event-pagina="{{ page.url }}">{% include icone.html nome="whatsapp" tamanho="20" %}WhatsApp<span class="sr"> (abre em nova aba)</span></a>
     </div>
     {%- if include.relacionados %}
     <div class="relacionados">

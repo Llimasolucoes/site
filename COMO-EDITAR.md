@@ -66,6 +66,12 @@ cada uma está em `assets/img/fotos/CREDITOS.txt`). O ideal é trocá-las aos po
 Hoje essas páginas estão como "Em construção" e fora do Google (`robots: "noindex, follow"`
 e `sitemap: false`). Quando houver conteúdo, apague essas duas linhas no topo do arquivo.
 
+### Estatísticas de visitas (Umami)
+Painel em https://cloud.umami.is (região União Europeia, sem cookies). O ID do site fica em `_config.yml`
+(`umami_website_id`). Os botões de WhatsApp e de "Solicitar orçamento" têm o atributo `data-umami-event`,
+que registra os cliques como eventos com nomes como "WhatsApp - botão flutuante" (aba **Events** do painel).
+O contador só é incluído no site publicado, não nos testes locais.
+
 ### Incluir o LinkedIn
 Preencha `linkedin:` em `_data/empresa.yml` com o endereço da página da empresa.
 

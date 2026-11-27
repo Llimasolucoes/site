@@ -14,7 +14,7 @@ Todo o texto vem do cabeçalho (front matter) do arquivo index.md de cada servi�
       <p class="hero__sub">{{ page.subtitulo }}</p>
       {%- if page.intro %}<p class="hero__intro">{{ page.intro }}</p>{% endif %}
       <div class="botoes">
-        <a class="botao botao--primario" href="{{ '/contato/' | relative_url }}?servico={{ page.nome | url_encode }}">Solicitar orçamento</a>
+        <a class="botao botao--primario" data-umami-event="Solicitar orçamento - topo do serviço" data-umami-event-pagina="{{ page.url }}" href="{{ '/contato/' | relative_url }}?servico={{ page.nome | url_encode }}">Solicitar orçamento</a>
         <a class="botao botao--texto" href="#como-fazemos">Como fazemos {% include icone.html nome="seta" tamanho="18" %}</a>
       </div>
     </div>
