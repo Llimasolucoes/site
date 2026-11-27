@@ -418,28 +418,6 @@ main:focus { outline: none; }
 /* ---------- Contato ---------- */
 .contato-grade { display: grid; gap: 40px; }
 @media (min-width: 960px) { .contato-grade { grid-template-columns: 1.5fr 1fr; gap: 56px; align-items: start; } }
-.form { display: grid; gap: 18px; }
-.form__linha { display: grid; gap: 18px; }
-@media (min-width: 640px) { .form__linha { grid-template-columns: 1fr 1fr; } }
-.campo label { display: block; font-weight: 700; margin-bottom: 6px; font-size: .98rem; }
-.campo .opcional { font-weight: 400; color: var(--cinza-texto); }
-.campo input, .campo select, .campo textarea {
-  width: 100%; min-height: 48px; padding: 11px 14px;
-  font: inherit; font-size: 1rem; color: var(--texto);
-  background: var(--branco); border: 1px solid #A9B3BF; border-radius: var(--raio);
-}
-.campo textarea { min-height: 150px; resize: vertical; }
-.campo input[type="file"] { padding: 10px; background: var(--fundo); }
-.campo input:focus-visible, .campo select:focus-visible, .campo textarea:focus-visible { outline: 3px solid var(--azul); outline-offset: 1px; border-color: var(--azul); }
-.campo__ajuda { font-size: .9rem; color: var(--cinza-texto); margin: 6px 0 0; }
-.form__lgpd { font-size: .95rem; color: var(--cinza-texto); margin: 0; display: flex; gap: 8px; align-items: flex-start; }
-.form__lgpd .icone { color: var(--azul); margin-top: 3px; }
-.form__acoes { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-.form__status { margin: 0; padding: 14px 16px; border-radius: var(--raio); font-weight: 700; }
-.form__status[hidden] { display: none; }
-.form__status--ok { background: #E8F4EC; color: #1A5D33; }
-.form__status--erro { background: #FBEAEA; color: #8E1C1C; }
-.honeypot { position: absolute; left: -9999px; }
 
 .canais { list-style: none; display: grid; gap: 14px; }
 .canal {
@@ -702,3 +680,33 @@ main:focus { outline: none; }
 }
 @media (min-width: 900px) { .whats-flutuante { right: 24px; bottom: 24px; width: 60px; height: 60px; } }
 @media print { .whats-flutuante { display: none; } }
+
+/* ---------- Contato pelo WhatsApp ---------- */
+.botao--whats { background: var(--verde-whats); color: var(--branco); }
+.botao--whats:hover { background: #136135; color: var(--branco); }
+.botao--grande { min-height: 56px; padding: 14px 28px; font-size: 1.08rem; width: 100%; }
+@media (min-width: 640px) { .botao--grande { width: auto; } }
+.contato__lead { font-size: 1.12rem; color: var(--cinza-texto); }
+.contato__lead strong { color: var(--texto); }
+.whats-card {
+  margin: 28px 0 40px; padding: clamp(22px, 4vw, 32px); border-radius: var(--raio);
+  background: #F0F8F3; border: 1px solid #CFE6D8; border-top: 4px solid var(--verde-whats);
+}
+.whats-card__titulo { color: var(--texto); font-size: 1.15rem; }
+.whats-card__lista { margin-bottom: 24px; }
+.whats-card__lista .icone { color: var(--verde-whats); }
+.whats-card__nota { display: flex; gap: 8px; align-items: flex-start; margin: 16px 0 0; font-size: .93rem; color: var(--cinza-texto); }
+.whats-card__nota .icone { color: var(--verde-whats); margin-top: 4px; }
+.contato__subtitulo { margin-top: 8px; }
+.passos { list-style: none; display: grid; gap: 14px; }
+.passos li { display: flex; gap: 16px; align-items: flex-start; }
+.passos__num {
+  flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px;
+  border-radius: 50%; background: var(--noite); color: var(--ciano); font-family: var(--fonte-titulo); font-weight: 700;
+}
+.passos strong { font-family: var(--fonte-titulo); color: var(--azul); }
+.passos p { margin: 2px 0 0; color: var(--cinza-texto); }
+.canal--destaque { background: #F0F8F3; border-left: 3px solid var(--verde-whats); }
+.canal--destaque .icone { color: var(--verde-whats); }
+.hero--foto .botao--whats { background: var(--verde-whats); color: var(--branco); }
+.hero--foto .botao--whats:hover { background: #136135; }

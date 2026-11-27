@@ -7,14 +7,7 @@ baseurl: ""
 lang: pt-BR
 timezone: America/Sao_Paulo
 
-# ------------------------------------------------------------------
-# Formulário de contato (página /contato/)
-# TROCAR PELO ID DO FORMSPREE: crie o formulário em https://formspree.io
-# com o e-mail leonardo@llimasolucoes.com.br e substitua "SEU_ID" abaixo
-# pelo código que o Formspree mostrar (ex.: https://formspree.io/f/xabcdwxy).
-# Enquanto estiver "SEU_ID", o formulário envia pelo programa de e-mail do visitante.
-formspree_endpoint: "https://formspree.io/f/SEU_ID"
-# ------------------------------------------------------------------
+# Contato: o orçamento é feito pelo WhatsApp (links em _data/empresa.yml).
 
 markdown: kramdown
 permalink: pretty

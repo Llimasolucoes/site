@@ -44,15 +44,11 @@ simulacao, montagem, usuario, alvo, relogio, regua, engrenagem.
 
 ## Tarefas comuns
 
-### Ativar o formulário (Formspree)
-1. Crie uma conta em https://formspree.io com leonardo@llimasolucoes.com.br e crie um formulário.
-2. Copie o endereço que ele mostrar (ex.: `https://formspree.io/f/xabcdwxy`).
-3. Em `_config.yml`, troque `https://formspree.io/f/SEU_ID` por esse endereço
-   (a linha está marcada com "TROCAR PELO ID DO FORMSPREE").
-
-Enquanto isso não for feito, o botão "Enviar mensagem" abre o programa de e-mail do visitante
-com a mensagem já preenchida. O envio de **anexos** pelo Formspree exige um plano pago;
-no plano gratuito o anexo não é enviado (o restante da mensagem chega normalmente).
+### Contato e orçamento
+O site não tem formulário: o orçamento é feito pelo **WhatsApp**. Os botões da página Contato abrem
+a conversa com a mensagem "Olá, Leonardo! Vim pelo site da L.LIMA e gostaria de solicitar um orçamento."
+(quando o visitante vem de uma página de serviço, o nome do serviço é acrescentado).
+O número e o link ficam em `_data/empresa.yml` (`whatsapp_link` e `whatsapp_orcamento_link`).
 
 ### Fotos do site
 As fotos ficam em `assets/img/fotos/`, cada uma em duas larguras (`nome-1600.webp` e `nome-800.webp`),
@@ -105,4 +101,4 @@ Para garantir que só o dono altere o site (feito por você, nas configurações
    e remover o acesso do Claude quando o trabalho terminar.
 4. Domínio: verificar `llimasolucoes.com.br` no GitHub (Settings da conta → Pages → Add a domain),
    marcar *Enforce HTTPS* no Pages do repositório e ativar dois fatores no Registro.br.
-5. Formspree (quando configurar): também com dois fatores.
+5. WhatsApp: ative a confirmação em duas etapas (WhatsApp → Configurações → Conta).

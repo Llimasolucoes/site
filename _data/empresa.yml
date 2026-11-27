@@ -15,6 +15,8 @@ endereco:
 telefone: "(11) 95136-0265"
 telefone_link: "+5511951360265"
 whatsapp_link: "https://wa.me/5511951360265"
+# Link do botão de orçamento (abre o WhatsApp com uma mensagem inicial pronta)
+whatsapp_orcamento_link: "https://wa.me/5511951360265?text=Ol%C3%A1%2C%20Leonardo%21%20Vim%20pelo%20site%20da%20L.LIMA%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
 email: "leonardo@llimasolucoes.com.br"
 cnpj: "64.790.044/0001-45"
 
