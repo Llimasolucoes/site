@@ -83,3 +83,26 @@ e abra http://localhost:4000.
 ## Não mexer
 - `CNAME` (domínio do site).
 - `logo.png` e `favicon.png` (usados pelo site e pelos dados do Google).
+
+## Segurança
+O site é **estático**: não tem banco de dados, login nem servidor próprio. Ninguém consegue alterar
+os textos "pelo site". A única forma de mudar o conteúdo é **publicar no repositório GitHub**
+(branch `main`). Proteger o site é, portanto, proteger a conta do GitHub e o domínio.
+
+Já aplicado no código:
+- Política de segurança de conteúdo (CSP) em todas as páginas (`_layouts/base.html`): o navegador só
+  executa os scripts do próprio site e só carrega fontes do Google Fonts. Se alterar o pequeno script
+  inline do `<head>`, atualize o hash `sha256-...` da CSP (o comentário ao lado explica).
+- Nenhum script de terceiros, nenhuma senha ou chave no código, links externos com `rel="noopener"`.
+
+Para garantir que só o dono altere o site (feito por você, nas configurações do GitHub):
+1. Conta GitHub `Llimasolucoes`: senha forte e única e **autenticação em dois fatores** (Settings → Password and authentication).
+   Proteja também o e-mail da conta, porque é por ele que se recupera a senha.
+2. Regra para a `main` (repositório → Settings → Rules → Rulesets → New branch ruleset):
+   alvo `main`; marcar *Restrict deletions*, *Block force pushes* e *Require a pull request before merging*;
+   em *Bypass list*, adicionar só *Repository admin* (você).
+3. Aplicativos com acesso (Settings → Applications → Installed GitHub Apps): manter só o necessário
+   e remover o acesso do Claude quando o trabalho terminar.
+4. Domínio: verificar `llimasolucoes.com.br` no GitHub (Settings da conta → Pages → Add a domain),
+   marcar *Enforce HTTPS* no Pages do repositório e ativar dois fatores no Registro.br.
+5. Formspree (quando configurar): também com dois fatores.
