@@ -12,3 +12,7 @@ esmerilhamento-faiscas-caldeiraria 1504917595217-d4dc5ebe6122
 bombas-industriais-tubulacao 1513828742140-ccaa28f3eda0
 motor-bomba-industrial 1513828583688-c52646db42da
 linha-producao-industrial 1610891015188-5369212db097
+
+Recortes (mesma licença):
+conjuntos-motor-bomba  recorte de bombas-industriais-tubulacao
+bomba-centrifuga-inox  recorte de bombas-industriais-tubulacao

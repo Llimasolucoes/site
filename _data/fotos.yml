@@ -25,3 +25,7 @@ motor-bomba-industrial:
   alt: "Motor e bomba centrífuga em instalação industrial"
 linha-producao-industrial:
   alt: "Linha de produção industrial com máquinas automatizadas"
+conjuntos-motor-bomba:
+  alt: "Conjuntos motor-bomba industriais montados sobre base metálica"
+bomba-centrifuga-inox:
+  alt: "Bomba centrífuga de aço inox com transmissor em instalação industrial"
