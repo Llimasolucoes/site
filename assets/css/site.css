@@ -686,3 +686,19 @@ main:focus { outline: none; }
 /* ---- Rodapé ---- */
 .rodape { background: var(--noite); }
 .rodape__contato .icone { color: var(--ciano); }
+.chips .chip--destaque { background: var(--azul); color: var(--branco); border-color: var(--azul); }
+.chips .chip--destaque .icone { color: var(--ciano-claro); }
+@media (min-width: 900px) { .galeria__lista:has(> li:nth-child(3):last-child) { grid-template-columns: repeat(3, 1fr); } }
+
+/* Fundo claro enquanto a foto do card carrega */
+.card__imagem { background: #E3E8EF; }
+
+/* WhatsApp sempre visível e acompanhando a rolagem, em todas as páginas */
+.whats-flutuante {
+  position: fixed; z-index: 90;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  width: 56px; height: 56px;
+}
+@media (min-width: 900px) { .whats-flutuante { right: 24px; bottom: 24px; width: 60px; height: 60px; } }
+@media print { .whats-flutuante { display: none; } }
