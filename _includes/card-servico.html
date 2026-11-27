@@ -1,7 +1,10 @@
-{%- comment -%} Card de serviço. Parâmetro: s (página do serviço) {%- endcomment -%}
-<li class="card card--link reveal">
-  <span class="card__icone">{% include icone.html nome=include.s.icone tamanho="28" %}</span>
-  <h3 class="card__titulo"><a href="{{ include.s.url | relative_url }}">{{ include.s.nome }}</a></h3>
-  <p>{{ include.s.resumo }}</p>
-  <span class="card__mais" aria-hidden="true">Saiba mais {% include icone.html nome="seta" tamanho="16" %}</span>
+{%- comment -%} Card de serviço com foto e cor própria. Parâmetro: s (página do serviço) {%- endcomment -%}
+<li class="card card--link card--foto reveal" style="--cor: {{ include.s.cor | default: '#0A3A7A' }}; --cor-icone: {{ include.s.cor_icone | default: '#FFFFFF' }};">
+  <div class="card__imagem">{% include foto.html nome=include.s.hero_img sizes="(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw" %}</div>
+  <div class="card__corpo">
+    <span class="card__icone card__icone--cor">{% include icone.html nome=include.s.icone tamanho="26" %}</span>
+    <h3 class="card__titulo"><a href="{{ include.s.url | relative_url }}">{{ include.s.nome }}</a></h3>
+    <p>{{ include.s.resumo }}</p>
+    <span class="card__mais" aria-hidden="true">Saiba mais {% include icone.html nome="seta" tamanho="16" %}</span>
+  </div>
 </li>

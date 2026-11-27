@@ -7,6 +7,12 @@ ordem: 6
 nome: "Bombas centrífugas e de engrenagens"
 icone: bomba
 resumo: "Manutenção e fabricação de componentes para bombas industriais."
+cor: "#2563EB"
+cor_icone: "#FFFFFF"
+hero_img: bombas-industriais-tubulacao
+galeria:
+  - motor-bomba-industrial
+  - usinagem-maquina-operatriz
 palavra_chave: "Manutenção de bombas centrífugas"
 
 title: "Manutenção de Bombas Centrífugas e de Engrenagens | L.LIMA"

@@ -5,7 +5,8 @@ layout: base
 Esqueleto comum das páginas de serviço (escopo, seção 3.3).
 Todo o texto vem do cabeçalho (front matter) do arquivo index.md de cada serviço.
 {%- endcomment -%}
-<section class="hero hero--interno">
+<section class="hero hero--foto" style="--cor: {{ page.cor | default: '#18B4E8' }};">
+  {% include hero-fundo.html nome=page.hero_img %}
   <div class="container hero__grade">
     <div class="hero__texto">
       {% include migalhas.html %}
@@ -18,8 +19,8 @@ Todo o texto vem do cabeçalho (front matter) do arquivo index.md de cada servi�
       </div>
     </div>
     {%- if page.hero_pontos %}
-    <aside class="hero__ficha" aria-label="Destaques do serviço">
-      <span class="hero__ficha-icone">{% include icone.html nome=page.icone tamanho="36" %}</span>
+    <aside class="hero__ficha" aria-label="Destaques do serviço" style="--cor-icone: {{ page.cor_icone | default: '#FFFFFF' }};">
+      <span class="hero__ficha-icone">{% include icone.html nome=page.icone tamanho="32" %}</span>
       <ul class="lista-check">
         {%- for p in page.hero_pontos %}
         <li>{% include icone.html nome="check" tamanho="18" %}<span>{{ p }}</span></li>
@@ -37,9 +38,9 @@ Todo o texto vem do cabeçalho (front matter) do arquivo index.md de cada servi�
       <h2 id="entregas-titulo">{{ page.entregas_titulo | default: "O que entregamos" }}</h2>
       {%- if page.entregas_intro %}<p>{{ page.entregas_intro }}</p>{% endif %}
     </header>
-    <ul class="grade grade--3">
+    <ul class="grade grade--3" style="--cor: {{ page.cor | default: '#0A3A7A' }}; --cor-icone: {{ page.cor_icone | default: '#FFFFFF' }};">
       {%- for c in page.entregas %}
-      <li class="card reveal">
+      <li class="card card--cor reveal">
         <span class="card__icone">{% include icone.html nome=c.icone tamanho="28" %}</span>
         <h3 class="card__titulo">{{ c.titulo }}</h3>
         <p>{{ c.texto }}</p>
@@ -51,6 +52,18 @@ Todo o texto vem do cabeçalho (front matter) do arquivo index.md de cada servi�
     {%- endif %}
   </div>
 </section>
+
+{%- if page.galeria %}
+<section class="galeria" aria-label="Imagens do serviço">
+  <div class="container">
+    <ul class="galeria__lista">
+      {%- for g in page.galeria %}
+      <li class="galeria__item reveal">{% include foto.html nome=g sizes="(min-width: 760px) 50vw, 100vw" %}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}
 
 {%- if page.aplicacoes %}
 <section class="secao secao--cinza" aria-labelledby="aplicacoes-titulo">
@@ -69,7 +82,7 @@ Todo o texto vem do cabeçalho (front matter) do arquivo index.md de cada servi�
 </section>
 {%- endif %}
 
-<section class="secao" id="como-fazemos" aria-labelledby="etapas-titulo">
+<section class="secao secao--escura" id="como-fazemos" aria-labelledby="etapas-titulo">
   <div class="container">
     <header class="secao__cabeca">
       {% include barra.html %}
@@ -107,7 +120,7 @@ Todo o texto vem do cabeçalho (front matter) do arquivo index.md de cada servi�
 {%- if page.destaque %}
 <section class="secao secao--estreita" aria-labelledby="destaque-titulo">
   <div class="container">
-    <div class="destaque reveal">
+    <div class="destaque reveal" style="--cor: {{ page.cor | default: '#C62828' }}; --cor-icone: {{ page.cor_icone | default: '#FFFFFF' }};">
       <span class="destaque__icone">{% include icone.html nome=page.destaque.icone tamanho="32" %}</span>
       <div>
         <h2 id="destaque-titulo">{{ page.destaque.titulo }}</h2>

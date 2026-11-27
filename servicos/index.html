@@ -5,7 +5,8 @@ title: "Serviços de Engenharia, Automação e Usinagem no ABC | L.LIMA"
 description: "Engenharia e projetos, robótica, gestão de projetos, adequação à NR-12, usinagem e manutenção de bombas em Diadema, ABC Paulista e Grande São Paulo."
 ---
 {%- assign servicos = site.pages | where: "layout", "servico" | sort: "ordem" -%}
-<section class="hero hero--interno">
+<section class="hero hero--foto hero--interno">
+  {% include hero-fundo.html nome="linha-producao-industrial" %}
   <div class="container">
     <div class="hero__texto hero__texto--largo">
       {% include migalhas.html %}
@@ -33,7 +34,7 @@ description: "Engenharia e projetos, robótica, gestão de projetos, adequação
   </div>
 </section>
 
-<section class="secao secao--cinza" aria-labelledby="processo-titulo">
+<section class="secao secao--escura" aria-labelledby="processo-titulo">
   <div class="container">
     <header class="secao__cabeca">
       {% include barra.html %}

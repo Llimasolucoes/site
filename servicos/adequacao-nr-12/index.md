@@ -6,6 +6,9 @@ ordem: 4
 nome: "Adequação à NR-12"
 icone: seguranca
 resumo: "Segurança de máquinas e linhas de produção, do diagnóstico à máquina adequada."
+cor: "#F5B700"
+cor_icone: "#061A3D"
+hero_img: painel-eletrico-seguranca-maquinas
 palavra_chave: "Adequação NR-12"
 
 title: "Adequação NR-12 em Diadema e ABC | L.LIMA Projetos e Soluções Industriais"

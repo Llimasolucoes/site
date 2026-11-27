@@ -6,6 +6,12 @@ ordem: 2
 nome: "Robótica e automação"
 icone: robo
 resumo: "Programação, simulação e integração de robôs industriais."
+cor: "#E5590C"
+cor_icone: "#FFFFFF"
+hero_img: robos-industriais-linha-producao
+galeria:
+  - celula-robotizada-solda-automotiva
+  - painel-eletrico-seguranca-maquinas
 palavra_chave: "Programação de robôs industriais"
 
 title: "Programação de Robôs Industriais em Diadema e ABC | L.LIMA"

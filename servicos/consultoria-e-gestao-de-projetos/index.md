@@ -6,6 +6,9 @@ ordem: 3
 nome: "Consultoria e gestão de projetos"
 icone: gestao
 resumo: "Planejamento, escopo, prazo, custo e fornecedores sob controle, do conceito ao aceite final."
+cor: "#7C3AED"
+cor_icone: "#FFFFFF"
+hero_img: projeto-desenho-tecnico
 palavra_chave: "Gestão de projetos industriais"
 
 title: "Gestão de Projetos Industriais e de Automação | L.LIMA"

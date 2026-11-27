@@ -8,6 +8,12 @@ ordem: 5
 nome: "Usinagem e caldeiraria"
 icone: usinagem
 resumo: "Peças e conjuntos sob desenho ou amostra, com controle dimensional."
+cor: "#0D9488"
+cor_icone: "#FFFFFF"
+hero_img: usinagem-maquina-operatriz
+galeria:
+  - solda-mig-caldeiraria
+  - esmerilhamento-faiscas-caldeiraria
 palavra_chave: "Usinagem sob encomenda"
 
 title: "Usinagem Sob Encomenda e Caldeiraria em Diadema | L.LIMA"

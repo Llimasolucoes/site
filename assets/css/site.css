@@ -520,3 +520,169 @@ main:focus { outline: none; }
 .chips .icone { color: var(--vermelho); }
 .endereco-linha { margin: 28px 0 0; color: var(--cinza-texto); }
 .aviso .migalhas ol { justify-content: center; }
+
+/* ==========================================================================
+   TEMA TECNOLÓGICO: heros escuros com foto, ciano de destaque e cores por serviço
+   ========================================================================== */
+:root {
+  --noite: #061A3D;
+  --noite-2: #0B2A5B;
+  --ciano: #18B4E8;
+  --ciano-claro: #6FD3F5;
+  --ciano-texto: #0679A8;
+  --texto-claro: #E6EEF8;
+  --texto-claro-2: #B9C8DD;
+}
+
+/* ---- Hero com foto ---- */
+.hero--foto { background: var(--noite); color: var(--branco); isolation: isolate; }
+.hero--foto::before {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(6, 26, 61, .72) 0%, rgba(6, 26, 61, .86) 50%, rgba(6, 26, 61, .96) 100%);
+}
+@media (min-width: 900px) {
+  .hero--foto::before {
+    background:
+      linear-gradient(90deg, rgba(6, 26, 61, .97) 0%, rgba(6, 26, 61, .90) 38%, rgba(6, 26, 61, .55) 70%, rgba(6, 26, 61, .35) 100%),
+      linear-gradient(0deg, rgba(6, 26, 61, .55) 0%, transparent 35%);
+  }
+}
+.hero--foto::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; top: auto; height: 4px; z-index: 3;
+  opacity: 1; -webkit-mask-image: none; mask-image: none;
+  background: linear-gradient(90deg, var(--vermelho) 0 22%, var(--azul) 22% 70%, var(--ciano) 70% 100%);
+}
+.hero__fundo { position: absolute; inset: 0; z-index: 0; }
+.hero__fundo img { width: 100%; height: 100%; object-fit: cover; }
+.hero__grade-tec {
+  position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background-image: linear-gradient(rgba(24, 180, 232, .10) 1px, transparent 1px), linear-gradient(90deg, rgba(24, 180, 232, .10) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, transparent 60%);
+  mask-image: linear-gradient(90deg, #000 0%, transparent 60%);
+}
+.hero--foto > .container { position: relative; z-index: 4; }
+.hero--foto { padding: clamp(56px, 9vw, 120px) 0 clamp(64px, 10vw, 128px); }
+.hero--foto h1 { color: var(--branco); }
+.hero--foto .sobretitulo { color: var(--ciano); }
+.hero--foto .hero__sub { color: var(--texto-claro); }
+.hero--foto .hero__intro { color: var(--texto-claro-2); }
+.hero--foto .migalhas li, .hero--foto .migalhas a { color: var(--texto-claro-2); }
+.hero--foto .migalhas a:hover { color: var(--branco); }
+.hero--foto .botao--primario, .chamada .botao--primario { background: var(--ciano); color: var(--noite); }
+.hero--foto .botao--primario:hover, .chamada .botao--primario:hover { background: var(--ciano-claro); color: var(--noite); }
+.hero--foto .botao--secundario, .chamada .botao--secundario { background: transparent; color: var(--branco); border-color: rgba(255, 255, 255, .7); }
+.hero--foto .botao--secundario:hover, .chamada .botao--secundario:hover { background: rgba(255, 255, 255, .1); color: var(--branco); border-color: var(--branco); }
+.hero--foto .botao--texto { color: var(--ciano); }
+.hero--foto .botao--texto:hover { color: var(--branco); }
+.hero--foto :focus-visible, .secao--escura :focus-visible, .chamada :focus-visible, .rodape :focus-visible, .numeros :focus-visible { outline-color: var(--ciano); }
+
+/* Ficha de destaques (vidro) */
+.hero--foto .hero__ficha {
+  background: rgba(6, 26, 61, .55); color: var(--texto-claro);
+  border: 1px solid rgba(255, 255, 255, .18); border-top: 4px solid var(--cor, var(--ciano));
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+}
+.hero--foto .hero__ficha-icone {
+  width: 60px; height: 60px; border-radius: var(--raio); align-items: center; justify-content: center;
+  background: var(--cor, var(--ciano)); color: var(--cor-icone, var(--branco));
+}
+.hero--foto .lista-check .icone { color: var(--ciano); }
+
+/* Cartão de contato direto (Início) */
+.hero--foto .contato-direto { border: 0; box-shadow: 0 24px 48px rgba(0, 0, 0, .3); border-top: 4px solid var(--ciano); }
+.contato-direto__avatar {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: 64px; height: 64px; border-radius: 50%; background: var(--azul); color: var(--branco);
+  box-shadow: 0 0 0 4px var(--azul-claro);
+}
+
+/* Páginas de aviso com foto */
+.aviso.hero--foto p { color: var(--texto-claro); }
+.aviso.hero--foto .aviso__selo { background: rgba(24, 180, 232, .16); color: var(--ciano-claro); }
+.aviso.hero--foto .hero__grade-tec { -webkit-mask-image: radial-gradient(circle at 50% 40%, #000, transparent 70%); mask-image: radial-gradient(circle at 50% 40%, #000, transparent 70%); }
+.aviso.hero--foto::before { background: rgba(6, 26, 61, .86); }
+
+/* ---- Faixa de números (escura, emenda no hero) ---- */
+.numeros { background: var(--noite-2); border-bottom: 0; }
+.numeros__valor { color: var(--branco); }
+.numeros__rotulo { color: var(--texto-claro-2); }
+.numeros__item { border-color: rgba(255, 255, 255, .12) !important; position: relative; }
+.numeros__item::before { content: ""; display: block; width: 28px; height: 3px; background: var(--ciano); margin-bottom: 14px; }
+
+/* ---- Seção escura (Como trabalhamos) ---- */
+.secao--escura {
+  background:
+    radial-gradient(circle at 85% 0%, rgba(24, 180, 232, .16), transparent 45%),
+    radial-gradient(circle at 0% 100%, rgba(198, 40, 40, .10), transparent 40%),
+    var(--noite);
+  color: var(--texto-claro);
+}
+.secao--escura h2 { color: var(--branco); }
+.secao--escura .secao__cabeca p { color: var(--texto-claro-2); }
+.secao--escura .etapa { background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .12); border-top: 3px solid var(--ciano); }
+.secao--escura .etapa__num { color: var(--ciano); }
+.secao--escura .etapa__titulo { color: var(--branco); }
+.secao--escura .etapa p { color: var(--texto-claro-2); }
+.secao--escura .etapa .etapa__cliente { color: var(--texto-claro); border-top-color: rgba(255, 255, 255, .16); }
+.secao--escura .etapa__cliente strong, .secao--escura .etapa__cliente .icone { color: var(--ciano); }
+
+/* ---- Cards com foto e com cor por serviço ---- */
+.card--foto { padding: 0; overflow: hidden; display: flex; flex-direction: column; border-top: 4px solid var(--cor, var(--azul)); }
+.card__imagem { overflow: hidden; background: var(--noite); }
+.card__imagem img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform .5s ease; }
+.card--foto:hover .card__imagem img { transform: scale(1.04); }
+.card__corpo { padding: 0 26px 28px; display: flex; flex-direction: column; flex: 1; }
+.card__icone--cor {
+  background: var(--cor, var(--azul)); color: var(--cor-icone, var(--branco));
+  margin-top: -26px; position: relative; border: 3px solid var(--branco); box-shadow: 0 6px 16px rgba(6, 26, 61, .18);
+}
+.card--link:hover { border-color: var(--cor, var(--azul)); }
+.card--cor { border-top: 3px solid var(--cor, var(--azul)); }
+.card--cor .card__icone { background: var(--cor, var(--azul)); color: var(--cor-icone, var(--branco)); }
+.pilar .card__corpo .card__lista { margin-top: auto; padding-top: 14px; }
+
+/* Aplicações com destaque ciano */
+.aplic { border-left-color: var(--ciano); }
+.aplic .icone { color: var(--ciano-texto); }
+
+/* Galeria de fotos nas páginas de serviço */
+.galeria { padding: 0 0 var(--secao); }
+.galeria__lista { list-style: none; display: grid; gap: 20px; }
+@media (min-width: 760px) { .galeria__lista { grid-template-columns: 1fr 1fr; } }
+.galeria__item img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--raio); }
+
+/* Destaque com a cor do serviço */
+.destaque { background: linear-gradient(135deg, var(--noite) 0%, var(--azul) 100%); border-left-color: var(--cor, var(--vermelho)); }
+.destaque__icone { background: var(--cor, rgba(255, 255, 255, .12)); color: var(--cor-icone, var(--branco)); }
+
+/* Credenciais (Quem está por trás) */
+.credenciais { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.credencial { background: var(--noite); border-radius: var(--raio); padding: 22px 20px; border-left: 3px solid var(--ciano); }
+.credencial__valor { display: block; font-family: var(--fonte-titulo); font-weight: 700; color: var(--ciano); font-size: 1.45rem; line-height: 1.2; }
+.credencial__rotulo { display: block; color: var(--texto-claro-2); font-size: .92rem; margin-top: 6px; line-height: 1.4; }
+.credencial:nth-child(2) { border-left-color: var(--vermelho); }
+.credencial:nth-child(3) { border-left-color: #F5B700; }
+.credencial:nth-child(4) { border-left-color: #E5590C; }
+
+/* Ficha da página Sobre */
+.ficha__icone { display: inline-flex; width: 64px; height: 64px; align-items: center; justify-content: center; border-radius: 50%; background: var(--azul); color: var(--branco); margin-bottom: 6px; }
+
+/* ---- Chamada final em faixa escura ---- */
+.chamada, .secao--cinza + .chamada {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(24, 180, 232, .22), transparent 50%),
+    linear-gradient(135deg, var(--noite) 0%, var(--azul) 100%);
+  color: var(--branco);
+}
+.chamada h2 { color: var(--branco); }
+.chamada__texto { color: var(--texto-claro); }
+.chamada .relacionados { border-top-color: rgba(255, 255, 255, .16); }
+.chamada .relacionados__titulo { color: var(--texto-claro-2); }
+.chamada .relacionados a { color: var(--branco); border-color: rgba(255, 255, 255, .25); }
+.chamada .relacionados a:hover { background: rgba(255, 255, 255, .08); border-color: var(--ciano); }
+
+/* ---- Rodapé ---- */
+.rodape { background: var(--noite); }
+.rodape__contato .icone { color: var(--ciano); }

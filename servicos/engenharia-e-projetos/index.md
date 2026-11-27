@@ -6,6 +6,9 @@ ordem: 1
 nome: "Engenharia e projetos"
 icone: engenharia
 resumo: "Projetos mecânicos e elétricos completos, prontos para fabricar e montar."
+cor: "#0284C7"
+cor_icone: "#FFFFFF"
+hero_img: projeto-mecanico-cad
 palavra_chave: "Projeto mecânico industrial"
 
 title: "Projeto Mecânico Industrial em Diadema e ABC | L.LIMA"
