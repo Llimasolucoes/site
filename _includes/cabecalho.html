@@ -31,7 +31,7 @@
         <li><a href="{{ '/sobre/' | relative_url }}"{% if url == '/sobre/' %} aria-current="page"{% endif %}>Sobre</a></li>
         <li><a href="{{ '/contato/' | relative_url }}"{% if url == '/contato/' %} aria-current="page"{% endif %}>Contato</a></li>
       </ul>
-      <a class="botao botao--primario menu__cta" href="{{ '/contato/' | relative_url }}">Solicitar orçamento</a>
+      <a class="botao botao--primario menu__cta" href="{{ '/contato/' | relative_url }}" data-umami-event="Solicitar orçamento - menu" data-umami-event-pagina="{{ page.url }}">Solicitar orçamento</a>
     </nav>
   </div>
 </header>

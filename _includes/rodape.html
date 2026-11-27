@@ -29,13 +29,14 @@
       <h2 class="rodape__titulo">Contato</h2>
       <ul class="rodape__contato">
         <li>{% include icone.html nome="email" tamanho="18" %}<a href="mailto:{{ empresa.email }}">{{ empresa.email }}</a></li>
-        <li>{% include icone.html nome="whatsapp" tamanho="18" %}<a href="{{ empresa.whatsapp_link }}" rel="noopener" target="_blank">WhatsApp {{ empresa.telefone }}<span class="sr"> (abre em nova aba)</span></a></li>
+        <li>{% include icone.html nome="whatsapp" tamanho="18" %}<a href="{{ empresa.whatsapp_link }}" rel="noopener" target="_blank" data-umami-event="WhatsApp - rodapé" data-umami-event-pagina="{{ page.url }}">WhatsApp {{ empresa.telefone }}<span class="sr"> (abre em nova aba)</span></a></li>
         <li>{% include icone.html nome="local" tamanho="18" %}<address>{{ empresa.endereco.rua }}, {{ empresa.endereco.bairro }}<br>{{ empresa.endereco.cidade }} - {{ empresa.endereco.uf }}, CEP {{ empresa.endereco.cep }}</address></li>
       </ul>
     </div>
   </div>
   <div class="container rodape__base">
     <p>© {{ site.time | date: "%Y" }} {{ empresa.nome }} · CNPJ {{ empresa.cnpj }}</p>
+    <p>Este site mede visitas de forma anônima, sem cookies.</p>
     <p>Responsável técnico: {{ empresa.responsavel.nome }}, {{ empresa.responsavel.cargo | downcase }}, {{ empresa.responsavel.crea }}</p>
   </div>
 </footer>

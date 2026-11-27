@@ -17,7 +17,7 @@ Para editar, altere só o texto (não as tags < >). Veja COMO-EDITAR.md.
       <h1><span class="sobretitulo">Engenharia e automação industrial · Diadema - SP · Atendimento em todo o Brasil</span>Engenharia, automação e fabricação, com quem acompanha você de perto</h1>
       <p class="hero__sub">Projetos mecânicos e elétricos, robótica industrial, gestão de projetos, adequação à NR-12 e fabricação de componentes, com atendimento próximo do primeiro contato à entrega.</p>
       <div class="botoes">
-        <a class="botao botao--primario" href="{{ '/contato/' | relative_url }}">Solicitar orçamento</a>
+        <a class="botao botao--primario" href="{{ '/contato/' | relative_url }}" data-umami-event="Solicitar orçamento - topo da Início" data-umami-event-pagina="{{ page.url }}">Solicitar orçamento</a>
         <a class="botao botao--secundario" href="{{ '/servicos/' | relative_url }}">Conheça os serviços</a>
       </div>
     </div>
@@ -31,7 +31,7 @@ Para editar, altere só o texto (não as tags < >). Veja COMO-EDITAR.md.
       </div>
       <p class="contato-direto__frase">Fale direto com o engenheiro responsável pelo seu projeto, sem intermediários.</p>
       <ul class="contato-direto__canais">
-        <li><a href="{{ empresa.whatsapp_link }}" target="_blank" rel="noopener">{% include icone.html nome="whatsapp" tamanho="20" %}WhatsApp {{ empresa.telefone }}<span class="sr"> (abre em nova aba)</span></a></li>
+        <li><a href="{{ empresa.whatsapp_link }}" target="_blank" rel="noopener" data-umami-event="WhatsApp - cartão da Início" data-umami-event-pagina="{{ page.url }}">{% include icone.html nome="whatsapp" tamanho="20" %}WhatsApp {{ empresa.telefone }}<span class="sr"> (abre em nova aba)</span></a></li>
         <li><a href="mailto:{{ empresa.email }}">{% include icone.html nome="email" tamanho="20" %}{{ empresa.email }}</a></li>
       </ul>
     </aside>

@@ -17,7 +17,7 @@ CONTATO: o orçamento é feito pelo WhatsApp. O link com a mensagem inicial est�
       <h1><span class="sobretitulo">Orçamento de engenharia industrial · Atendimento em todo o Brasil</span>Vamos conversar sobre o seu projeto</h1>
       <p class="hero__sub">Cada projeto começa com uma boa conversa. Chame no WhatsApp e fale direto com o engenheiro responsável.</p>
       <div class="botoes">
-        <a class="botao botao--whats" href="{{ empresa.whatsapp_orcamento_link }}" target="_blank" rel="noopener" data-whats-orcamento>{% include icone.html nome="whatsapp" tamanho="22" %}Chamar no WhatsApp<span class="sr"> (abre em nova aba)</span></a>
+        <a class="botao botao--whats" href="{{ empresa.whatsapp_orcamento_link }}" target="_blank" rel="noopener" data-whats-orcamento data-umami-event="WhatsApp orçamento - topo do Contato">{% include icone.html nome="whatsapp" tamanho="22" %}Chamar no WhatsApp<span class="sr"> (abre em nova aba)</span></a>
       </div>
     </div>
   </div>
@@ -40,7 +40,7 @@ CONTATO: o orçamento é feito pelo WhatsApp. O link com a mensagem inicial est�
           <li>{% include icone.html nome="check" tamanho="18" %}<span><strong>Quantidade e prazo desejado</strong></span></li>
           <li>{% include icone.html nome="check" tamanho="18" %}<span><strong>Cidade e estado</strong> onde o serviço será feito</span></li>
         </ul>
-        <a class="botao botao--whats botao--grande" href="{{ empresa.whatsapp_orcamento_link }}" target="_blank" rel="noopener" data-whats-orcamento>{% include icone.html nome="whatsapp" tamanho="24" %}Chamar no WhatsApp {{ empresa.telefone }}<span class="sr"> (abre em nova aba)</span></a>
+        <a class="botao botao--whats botao--grande" href="{{ empresa.whatsapp_orcamento_link }}" target="_blank" rel="noopener" data-whats-orcamento data-umami-event="WhatsApp orçamento - lista do Contato">{% include icone.html nome="whatsapp" tamanho="24" %}Chamar no WhatsApp {{ empresa.telefone }}<span class="sr"> (abre em nova aba)</span></a>
         <p class="whats-card__nota">{% include icone.html nome="seguranca" tamanho="16" %}<span>Suas informações são usadas apenas para responder ao seu contato.</span></p>
       </div>
 
@@ -56,7 +56,7 @@ CONTATO: o orçamento é feito pelo WhatsApp. O link com a mensagem inicial est�
       {% include barra.html %}
       <h2 id="canais-titulo">Canais diretos</h2>
       <ul class="canais">
-        <li class="canal canal--destaque">{% include icone.html nome="whatsapp" %}<div><strong>WhatsApp (orçamentos e atendimento)</strong><a href="{{ empresa.whatsapp_orcamento_link }}" target="_blank" rel="noopener" data-whats-orcamento>{{ empresa.telefone }}<span class="sr"> (abre em nova aba)</span></a></div></li>
+        <li class="canal canal--destaque">{% include icone.html nome="whatsapp" %}<div><strong>WhatsApp (orçamentos e atendimento)</strong><a href="{{ empresa.whatsapp_orcamento_link }}" target="_blank" rel="noopener" data-whats-orcamento data-umami-event="WhatsApp orçamento - canais do Contato">{{ empresa.telefone }}<span class="sr"> (abre em nova aba)</span></a></div></li>
         <li class="canal">{% include icone.html nome="email" %}<div><strong>E-mail</strong><a href="mailto:{{ empresa.email }}">{{ empresa.email }}</a></div></li>
         <li class="canal">{% include icone.html nome="local" %}<div><strong>Endereço</strong><address>{{ empresa.endereco.rua }}, {{ empresa.endereco.bairro }}<br>{{ empresa.endereco.cidade }} - {{ empresa.endereco.uf }}, CEP {{ empresa.endereco.cep }}</address></div></li>
         <li class="canal">{% include icone.html nome="alvo" %}<div><strong>Região de atendimento</strong><span>{{ empresa.regiao_texto }}</span></div></li>

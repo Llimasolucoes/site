@@ -9,6 +9,10 @@ timezone: America/Sao_Paulo
 
 # Contato: o orçamento é feito pelo WhatsApp (links em _data/empresa.yml).
 
+# Estatísticas de visitas: Umami Cloud (região União Europeia, sem cookies). Painel: https://cloud.umami.is
+# O ID abaixo não é senha; ele aparece no código público do site.
+umami_website_id: "c18c8fba-8c2b-4d2e-8217-77c12e73ed16"
+
 markdown: kramdown
 permalink: pretty
 
