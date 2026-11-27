@@ -54,10 +54,17 @@ Enquanto isso não for feito, o botão "Enviar mensagem" abre o programa de e-ma
 com a mensagem já preenchida. O envio de **anexos** pelo Formspree exige um plano pago;
 no plano gratuito o anexo não é enviado (o restante da mensagem chega normalmente).
 
-### Trocar ou incluir fotos
-Coloque as imagens em `assets/img/` em **WebP**, com nome descritivo
-(ex.: `usinagem-torno-diadema.webp`). Ao usar no HTML, informe `alt`, `width`, `height`
-e `loading="lazy"` (exceto na primeira imagem da página).
+### Fotos do site
+As fotos ficam em `assets/img/fotos/`, cada uma em duas larguras (`nome-1600.webp` e `nome-800.webp`),
+e o texto alternativo de cada uma está em `_data/fotos.yml`.
+Hoje são **fotos ilustrativas do Unsplash** (uso comercial gratuito, sem crédito obrigatório; a origem de
+cada uma está em `assets/img/fotos/CREDITOS.txt`). O ideal é trocá-las aos poucos por fotos reais da L.LIMA.
+
+- **Trocar uma foto mantendo o nome:** suba os dois arquivos novos (`-1600.webp` com 1600×1067 px e
+  `-800.webp` com 800×533 px, proporção 3:2) com o mesmo nome e ajuste o `alt` em `_data/fotos.yml`.
+- **Foto do topo de um serviço:** campo `hero_img` no topo de `servicos/<serviço>/index.md`
+  (também é a foto do card do serviço). Fotos extras abaixo dos cards: campo `galeria`.
+- **Cor de cada serviço:** campos `cor` (cor do destaque) e `cor_icone` (cor do ícone sobre ela).
 
 ### Publicar Projetos ou Conteúdos
 Hoje essas páginas estão como "Em construção" e fora do Google (`robots: "noindex, follow"`

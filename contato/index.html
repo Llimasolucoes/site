@@ -6,7 +6,8 @@ description: "Solicite orçamento de engenharia industrial, automação, NR-12, 
 ---
 {%- assign empresa = site.data.empresa -%}
 {%- assign servicos = site.pages | where: "layout", "servico" | sort: "ordem" -%}
-<section class="hero hero--interno">
+<section class="hero hero--foto hero--interno">
+  {% include hero-fundo.html nome="robos-industriais-linha-producao" %}
   <div class="container">
     <div class="hero__texto hero__texto--largo">
       {% include migalhas.html %}
